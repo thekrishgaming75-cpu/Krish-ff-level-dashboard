@@ -1,0 +1,253 @@
+*{box-sizing:border-box}
+body{margin:0;background:#080808;color:#eee;font-family:Arial,sans-serif}
+.hidden{display:none!important}
+
+.login{
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  padding:20px
+}
+.login form{
+  width:min(360px,100%);
+  background:#121212;
+  border:1px solid #222;
+  border-radius:16px;
+  padding:28px
+}
+.login h1{color:#00d9ff;margin:0}
+.login p{color:#777}
+.login input{
+  width:100%;
+  margin:7px 0;
+  padding:13px;
+  border:1px solid #292929;
+  background:#090909;
+  color:#fff;
+  border-radius:8px
+}
+.login button,.add{
+  width:100%;
+  padding:13px;
+  border:0;
+  border-radius:8px;
+  background:#087f98;
+  color:#fff;
+  font-weight:bold;
+  margin-top:8px
+}
+.loginMsg{color:#ff6970;margin-top:10px;font-size:12px}
+
+.app{
+  max-width:760px;
+  margin:auto;
+  padding:18px 14px 40px
+}
+.topbar,.card,.stat{
+  background:#121212;
+  border:1px solid #191919;
+  border-radius:15px;
+  box-shadow:0 8px 25px #0008
+}
+.topbar{
+  height:62px;
+  padding:0 17px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+.brand{color:#00d9ff;font-weight:800}
+.user-area{
+  display:flex;
+  gap:9px;
+  align-items:center;
+  font-size:11px
+}
+.user-area button{
+  border:0;
+  background:#351719;
+  color:#ff6970;
+  padding:10px;
+  border-radius:7px
+}
+.slots{
+  margin-top:12px;
+  padding:17px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+.big{font-size:18px;font-weight:bold}
+.slots small,.stat small{
+  color:#666;
+  font-size:8px;
+  letter-spacing:1.5px
+}
+.noslots{
+  border:0;
+  background:linear-gradient(90deg,#087c91,#633aa0);
+  color:#fff;
+  padding:11px 15px;
+  border-radius:9px;
+  font-weight:bold
+}
+.stats{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  margin-top:12px
+}
+.stat{
+  padding:12px 14px;
+  border-top:2px solid #00cfff
+}
+.stat b{
+  display:block;
+  margin-top:8px;
+  color:#00d9ff;
+  font-size:20px
+}
+.pink{color:#e14cff!important}
+.orange{color:#ffae32!important}
+
+.accounts{
+  margin-top:12px;
+  padding:15px
+}
+.accounts h3{
+  margin:2px 0 14px;
+  color:#00d9ff;
+  font-size:14px
+}
+.accounts h3 span{color:#eee}
+.accounts h3 i{
+  font-style:normal;
+  font-size:10px;
+  background:#18202a;
+  padding:4px 7px;
+  border-radius:10px
+}
+.account{
+  background:#151515;
+  border:1px solid #202020;
+  border-radius:13px;
+  padding:14px;
+  margin-bottom:13px
+}
+.tags{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-bottom:11px
+}
+.tag{
+  background:#202020;
+  border-radius:12px;
+  padding:6px 9px;
+  font-size:8px;
+  color:#aaa
+}
+.online{color:#00df8a}
+
+.head{
+  display:flex;
+  align-items:center;
+  gap:12px
+}
+.avatar{
+  width:48px;
+  height:48px;
+  border-radius:10px;
+  background:#2670e8;
+  display:grid;
+  place-items:center;
+  font-size:22px;
+  font-weight:bold
+}
+.name{font-size:15px;font-weight:bold}
+.uid{font-size:9px;color:#777;margin-top:4px}
+.level{
+  margin-left:auto;
+  background:#063b4b;
+  color:#00d9ff;
+  padding:9px 13px;
+  border-radius:18px;
+  font-size:11px;
+  font-weight:bold
+}
+.row{
+  display:flex;
+  justify-content:space-between;
+  margin-top:16px;
+  color:#777;
+  font-size:9px
+}
+.row b{color:#ddd}
+
+.progress-label{
+  display:flex;
+  justify-content:space-between;
+  margin-top:12px;
+  color:#00d9ff;
+  font-size:10px
+}
+.progress-label span:last-child{color:#666}
+.progress{
+  height:6px;
+  background:#070707;
+  border-radius:8px;
+  margin:7px 0 16px;
+  overflow:hidden
+}
+.bar{
+  height:100%;
+  background:linear-gradient(90deg,#00d9ff,#00df9b)
+}
+
+.exp{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px
+}
+.box{
+  background:#090909;
+  border-radius:9px;
+  text-align:center;
+  padding:12px 3px
+}
+.box small{
+  display:block;
+  color:#555;
+  font-size:7px;
+  letter-spacing:1px
+}
+.box strong{
+  display:block;
+  margin-top:8px;
+  font-size:17px
+}
+.gain{color:#00df8a}
+
+.actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  margin-top:12px
+}
+.actions button{
+  border:0;
+  border-radius:8px;
+  padding:12px;
+  background:#202020;
+  color:#eee;
+  font-weight:bold
+}
+.actions .delete{
+  background:#351719;
+  color:#ff6970
+}
+
+@media(max-width:500px){
+  .app{padding:10px}
+  .stats{gap:7px}
+}
