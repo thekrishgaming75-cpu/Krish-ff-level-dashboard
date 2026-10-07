@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FF LEVEL Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="login" class="login">
+  <form id="loginForm">
+    <h1>FF LEVEL</h1>
+    <p>Dashboard Login</p>
+    <input id="username" placeholder="Username" autocomplete="username" required>
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password" required>
+    <button>LOGIN</button>
+    <div id="loginMsg"></div>
+  </form>
+</div>
+
+<main id="app" class="app hidden">
+<header class="topbar">
+  <div class="brand">FF LEVEL</div>
+  <div class="user-area"><span id="who"></span><button id="logout">Logout</button></div>
+</header>
+
+<section class="slots card"><div><div class="big">0</div><small>AVAILABLE SLOTS</small></div><button class="noslots">◉ No Slots</button></section>
+<section class="stats">
+  <div class="stat"><small>ACTIVE ACCOUNTS</small><b id="active">0</b></div>
+  <div class="stat"><small>MATCHES STARTED</small><b id="started">0</b></div>
+  <div class="stat"><small>MATCHES DONE</small><b id="done">0</b></div>
+  <div class="stat"><small>TOTAL EXP</small><b id="totalExp" class="pink">+0</b></div>
+  <div class="stat"><small>UPTIME</small><b class="orange">--:--:--</b></div>
+  <div class="stat"><small>SLOTS</small><b>0</b></div>
+</section>
+
+<section class="accounts card">
+  <h3>◉ <span>Account Command</span> <i id="count">0</i></h3>
+  <div id="accounts"></div>
+  <button id="add" class="add">＋ Add Account</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
